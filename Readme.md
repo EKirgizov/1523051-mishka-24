@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Евгений Киргизов](https://up.htmlacademy.ru/adaptive/24/user/1523051).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
