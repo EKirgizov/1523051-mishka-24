@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин изделий ручной работы «Мишка»</title>
+  <link rel="stylesheet" href=".//css/style.css">
 </head>
 <body class="page-form__body">
   <header class="page-form-header">
-    <a class="page-header__logo">
+    <a class="page-form-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
     </a>
     <nav class="main-nav">
@@ -73,7 +74,7 @@
                   </li>
                   <li class="knitting-form-type-product-list__item">
                       <label class="type-product">
-                       <input class="visually-hidden control-input" type="radio" name="type-product-check"  value="toy" checked>
+                       <input class="visually-hidden type-product__control-input" type="radio" name="type-product-check"  value="toy" checked>
                        <span class="type-product__control-mark"></span>
                        <span class="type-product__control-label">Детская игрушка</span>
                       </label>
@@ -92,7 +93,7 @@
                   </li>
                   <li class="knitting-form-product-color-list__item">
                     <label class="product-color">
-                      <input class="visually-hidden control-input" type="checkbox" name="gray" checked>
+                      <input class="visually-hidden product-color__control-input" type="checkbox" name="gray" checked>
                       <span class="product-color__control-mark"></span>
                       <span class="product-color__control-label">Серый</span>
                     </label>
@@ -128,6 +129,7 @@
                 </ul>
             </fieldset>
             <fieldset class="knitting-form__fieldset client-fieldset">
+              <legend class="knitting-form-client-title">ФИО:</legend>
               <p class="knitting-form-client-name">
                 <label class="knitting-form-client-name__title" for="client-name">Имя:</label>
                 <input class="knitting-form__input client-name--input" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
@@ -160,7 +162,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo visually-hidden">
         <img class="page-footer__logo-image" src="img/logotype-tablet.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
       <div class="social page-footer--social">
@@ -170,7 +172,7 @@
               <svg class="social-list__instagram-icon" width="22" height="21">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
-              Мы в Инстаграме
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
@@ -178,7 +180,7 @@
               <svg class="social-list__facebook-icon" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
-              Мы в Фейсбуке
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
@@ -186,7 +188,7 @@
               <svg class="social-list__twitter-icon" width="23" height="20">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-              Мы в Твиттере
+              <span class="visually-hidden">Мы в Твиттере</span>
             </a>
           </li>
         </ul>

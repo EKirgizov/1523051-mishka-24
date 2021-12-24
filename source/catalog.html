@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин изделий ручной работы «Мишка»</title>
+  <link rel="stylesheet" href=".//css/style.css">
 </head>
 <body class="page-catalog__body">
   <header class="page-catalog-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+    <a class="page-catalog-header__logo" href="index.html">
+      <img class="page-vatalog-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item-current">
+          <li class="site-list__item">
            <a>
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list-item-current">
             <a href="form.html">
              Вязание на заказ
             </a>
@@ -45,21 +46,22 @@
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-catalog-main">
     <h1 class="visually-hidden">Магазин изделий ручной работы «Мишка»</h1>
-    <section class="catalog">
-      <div class="catalog__wrapper">
-        <header class="catalog__header">
-          <h2 class="catalog__title">
+    <section class="products">
+      <div class="products__wrapper">
+        <header class="products__header">
+          <h2 class="products__title">
             Каталог товаров
           </h2>
         </header>
       </div>
     </section>
-    <section class="catalog-wrapper">
+    <section class="catalog">
       <ul class="catalog-list">
         <li class="catalog-list__item">
-          <img src="img/catalog1.jpg" width="334" height="334" alt="зайчик">
+          <img class="catalog-list__image" src="img/catalog/photo-1-mobile.jpg" width="260" height="195" alt="зайчик">
+          <div class="catalog-list__item-wrapper">
           <h3 class="catalog-list__item-title">Зайчик-попрыгайчик</h3>
           <span class="catalog-list__item-text">Рост 30 см, вес 200 г</span>
           <div class="catalog-list__item-price-wrapper">
@@ -68,9 +70,11 @@
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </div>
+          </div>
         </li>
         <li class="catalog-list__item">
-          <img src="img/catalog2.jpg" width="334" height="334" alt="зайчик">
+          <img class="catalog-list__image" src="img/catalog/photo-2-mobile.jpg" width="260" height="195" alt="корзина">
+          <div class="catalog-list__item-wrapper">
           <h3 class="catalog-list__item-title">Корзинка для белья</h3>
           <span class="catalog-list__item-text">Диаметр 15 см, высота 10 г</span>
           <div class="catalog-list__item-price-wrapper">
@@ -79,9 +83,11 @@
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
           </div>
+          </div>
         </li>
         <li class="catalog-list__item">
-          <img src="img/catalog3.jpg" width="334" height="334" alt="зайчик">
+          <img class="catalog-list__image" src="img/catalog/photo-3-mobile.jpg" width="260" height="195" alt="большая корзина">
+          <div class="catalog-list__item-wrapper">
           <h3 class="catalog-list__item-title">Большая корзинка для игрушек</h3>
           <span class="catalog-list__item-text">Диаметр 30 см, высота 30 г</span>
           <div class="catalog-list__item-price-wrapper">
@@ -89,6 +95,7 @@
             <svg class="catalog-list__cart-icon" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
+          </div>
           </div>
         </li>
       </ul>
@@ -110,7 +117,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo visually-hidden">
         <img class="page-footer__logo-image" src="img/logotype-tablet.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
       <div class="page-footer__social social">
@@ -120,7 +127,7 @@
               <svg class="social-list__instagram-icon" width="22" height="21">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
-              Мы в Инстаграме
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
@@ -128,7 +135,7 @@
               <svg class="social-list__facebook-icon" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
-              Мы в Фейсбуке
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
@@ -136,7 +143,7 @@
               <svg class="social-list__twitter-icon" width="23" height="20">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-              Мы в Твиттере
+              <span class="visually-hidden">Мы в Твиттере</span>
             </a>
           </li>
         </ul>
