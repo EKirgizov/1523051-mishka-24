@@ -3,170 +3,23 @@
   flex-direction: column;
 }
 
-.knitting-form-product-color-list,
-.knitting-form-type-product-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.knitting-form-product-color-list .knitting-form-product-color-list__item:nth-child(n) {
-  margin-bottom: 23px;
-}
-
-.knitting-form-product-color-list .knitting-form-product-color-list__item:last-child {
-  margin-bottom: 0;
-}
-
-.product-color-fieldset,
-.type-product-fieldset {
-  position: relative;
-}
-
-.product-color,
-.type-product {
-  margin-left: 42px;
-  display: flex;
-  align-items: center;
-  padding: 10px 0 10px 0;
-}
-
-.product-color__control-label,
-.type-product__control-label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-  margin-left: 19px;
-}
-
-.product-color__control-input[type="checkbox"] + .product-color__control-mark {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url("../../img/checkbox.svg");
-  background-size: 42px 42px;
-  left: 0;
-}
-
-.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark {
-  background-image: none;
-}
-
-.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark::before {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url("../../img/checkbox-active.svg");
-  background-size: 42px 42px;
-  content: "";
-}
-
-.type-product__control-input[type="radio"] + .type-product__control-mark {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url("../../img/radio.svg");
-  background-size: 42px 42px;
-  left: 0;
-}
-
-.type-product__control-input[type="radio"]:checked + .type-product__control-mark {
-  background-image: none;
-}
-
-.type-product__control-input[type="radio"]:checked + .type-product__control-mark::before {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url("../../img/radio-active.svg");
-  background-size: 42px 42px;
-  content: "";
-}
-
-.knitting-form-product-color-title,
-.knitting-form-type-product-title,
-.knitting-form-client-title {
-  padding: 15px 10px 15px 0;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #63d1bb;
-  text-transform: uppercase;
-}
-
-.knitting-form__fieldset {
-  padding: 0;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-top: 1px solid #62d1ba;
-}
-
-.knitting-form-client-name,
-.knitting-form-client-surname,
-.knitting-form-client-patronymic {
-  display: flex;
-  flex-direction: column;
-}
-
-.knitting-form-client-name__title,
-.knitting-form-client-surname__title,
-.knitting-form-client-patronymic__title {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.knitting-form__input {
-  box-sizing: border-box;
-  width: 260px;
-  height: 52px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 2px solid #000000;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-  margin-top: 4px;
-}
-
-.knitting-form-client-phone,
-.knitting-form-client-mail,
-.knitting-form-client-text {
-  position: relative;
-  width: 260px;
-}
-
-.knitting-form-client-phone__title,
-.knitting-form-client-mail__title,
-.knitting-form-client-text__title {
+.knitting-form__button {
+  display: block;
+  padding: 18px 37px 18px 37px;
+  border: 2px solid #444444;
   background-color: #ffffff;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
-  color: #63d1bb;
   text-transform: uppercase;
-  padding-right: 20px;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 55px;
 }
 
-.knitting-form-client-phone__title::before,
-.knitting-form-client-mail__title::before,
-.knitting-form-client-text__title::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #62d1ba;
-  top: 10px;
-  z-index: -1;
-}
-
-.text--input {
-  height: 142px;
-  border: 2px solid #000000;
-  margin-top: 22px;
+.knitting-form__mark {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 30px;
 }

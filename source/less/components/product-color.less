@@ -1,0 +1,36 @@
+.product-color {
+  margin-left: 42px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+
+.product-color__control-label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 19px;
+}
+
+.product-color__control-input[type="checkbox"] + .product-color__control-mark {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-image: url("../../img/checkbox.svg");
+  background-size: 42px 42px;
+  left: 0;
+}
+
+.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark {
+  background-image: none;
+}
+
+.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark::before {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-image: url("../../img/checkbox-active.svg");
+  background-size: 42px 42px;
+  content: "";
+}

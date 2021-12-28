@@ -62,8 +62,8 @@
     </section>
     <section class="knitting-form-wrapper">
       <form class="knitting-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="knitting-form__fieldset type-product-fieldset">
-              <legend class="knitting-form-type-product-title">Тип</legend>
+          <fieldset class="knitting-form-fieldset type-product-fieldset">
+              <legend class="knitting-form-fieldset__title">Тип</legend>
               <ul class="knitting-form-type-product-list">
                   <li class="knitting-form-type-product-list__item">
                       <label class="type-product">
@@ -81,8 +81,8 @@
                   </li>
               </ul>
           </fieldset>
-          <fieldset class="knitting-form__fieldset product-color-fieldset">
-              <legend class="knitting-form-product-color-title">Цвет:</legend>
+          <fieldset class="knitting-form-fieldset product-color-fieldset">
+              <legend class="knitting-form-fieldset__title">Цвет:</legend>
               <ul class="knitting-form-product-color-list">
                   <li class="knitting-form-product-color-list__item">
                     <label class="product-color">
@@ -128,34 +128,34 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset class="knitting-form__fieldset client-fieldset">
-              <legend class="knitting-form-client-title">ФИО:</legend>
-              <p class="knitting-form-client-name">
-                <label class="knitting-form-client-name__title" for="client-name">Имя:</label>
-                <input class="knitting-form__input client-name--input" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
+            <fieldset class="knitting-form-fieldset client-fieldset">
+              <legend class="knitting-form-fieldset__title">ФИО:</legend>
+              <p class="knitting-form-client">
+                <label class="knitting-form-client__title" for="client-name">Имя:</label>
+                <input class="knitting-form-client__input client-name--input" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
               </p>
-              <p class="knitting-form-client-surname">
-                <label class="knitting-form-client-surname__title" for="client-surname">Фамилия:</label>
-                <input class="knitting-form__input surname--input" placeholder="Укажите фамилию" type="text" name="client-surname" id="client-surname" required>
+              <p class="knitting-form-client">
+                <label class="knitting-form-client__title" for="client-surname">Фамилия:</label>
+                <input class="knitting-form-client__input surname--input" placeholder="Укажите фамилию" type="text" name="client-surname" id="client-surname" required>
               </p>
-              <p class="knitting-form-client-patronymic">
-                <label class="knitting-form-client-patronymic__title" for="client-surname">Отчество:</label>
-                <input class="knitting-form__input patronymic--input" placeholder="Отчество, если желаете" type="text" name="client-patronymic" id="client-patronymic">
+              <p class="knitting-form-client">
+                <label class="knitting-form-client__title" for="client-surname">Отчество:</label>
+                <input class="knitting-form-client__input patronymic--input" placeholder="Отчество, если желаете" type="text" name="client-patronymic" id="client-patronymic">
               </p>
             </fieldset>
             <p class="knitting-form-client-phone">
               <label class="knitting-form-client-phone__title" for="client-phone">Тел</label>
-              <input class="knitting-form__input phone--input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="client-phone" id="client-phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
+              <input class="knitting-form-client-phone__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="client-phone" id="client-phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
             </p>
             <p class="knitting-form-client-mail">
               <label class="knitting-form-client-mail__title" for="client-mail">e-mail</label>
-              <input class="knitting-form__input mail--input" placeholder="Ваш Email*" type="email" name="client-mail" id="client-mail" required>
+              <input class="kir" placeholder="Ваш Email*" type="email" name="client-mail" id="client-mail" required>
             </p>
             <p class="knitting-form-client-text">
               <label class="knitting-form-client-text__title" for="client-text">Доп</label>
-              <textarea class="knitting-form__input text--input" id="client-text" name="client-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="knitting-form-client-text__input" id="client-text" name="client-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
-            <span class="knitting-form-mark">*Поля обязательны для заполнения</span>
+            <span class="knitting-form__mark">*Поля обязательны для заполнения</span>
             <button class="knitting-form__button button" type="submit">Отправить заказ</button>
       </form>
     </section>
