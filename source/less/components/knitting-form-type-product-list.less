@@ -4,4 +4,28 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 219px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 225px;
+  }
+}
+
+.knitting-form-type-product-list__item {
+  position: relative;
+}
+
+.knitting-form-type-product-list li:first-child {
+  margin-bottom: 9px;
+}
+
+.knitting-form-type-product-list li:nth-child(2) {
+  margin-bottom: 31px;
 }

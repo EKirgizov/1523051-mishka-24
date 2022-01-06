@@ -1,0 +1,75 @@
+.category-products-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1050px;
+  }
+}
+
+.category-products-list__item {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  background-color: #63d1bb;
+  position: absolute;
+  left: 0;
+  top: 280px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 334px;
+    top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 525px;
+    top: 0;
+  }
+}
+
+.category-products-list__item:nth-child(2) {
+  background-color: #56c3b2;
+  top: 383px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+}
+
+.category-products-list__item-toy,
+.category-products-list__item-interior {
+  margin: 0;
+  display: block;
+  width: 130px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 24px 160px 31px 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 167px 34px 36px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 350px 34px 36px;
+  }
+}
+
+.category-products-list__interior-icon,
+.category-products-list__toy-icon {
+  position: absolute;
+}

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин изделий ручной работы «Мишка»</title>
   <link rel="stylesheet" href=".//css/style.css">
 </head>
@@ -19,23 +20,23 @@
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item site-list-item-current">
+          <li class="site-list__item">
             <a href="form.html">
-             Вязание на заказ
+              Вязание на заказ
             </a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__search">
-            <a href="#.html">
+            <a class="user-list__search-item" href="#.html">
               <svg class="user-list__search-icon" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
-              Поиск по сайту
+              <span class="user-list__search-title">Поиск по сайту</span>
             </a>
           </li>
-          <li class="site-list__cart">
-            <a href="#.html">
+          <li class="user-list__cart">
+            <a class="user-list__cart-item" href="#.html">
              <svg class="user-list__cart-icon" width="21" height="18">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
@@ -50,6 +51,23 @@
     <h1 class="visually-hidden">Магазин изделий ручной работы «Мишка»</h1>
     <section class="products">
       <div class="products__wrapper">
+        <div class="products-header">
+          <nav class="products-header__navigation">
+            <ul class="products-header__list">
+              <li class="products-header__item">
+                <a class="products-header__item-new" href="#">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="products-header__item">
+                <a class="products-header__item-sale" href="#">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <span class="products-header__delivery">Бесплатная доставка по России</span>
+        </div>
         <header class="products__header">
           <h2 class="products__title">
             Каталог товаров
@@ -100,7 +118,7 @@
         </li>
       </ul>
     </section>
-    <section class="process-wrapper">
+    <section class="process">
       <h2 class="process__title">
         Процесс производства
       </h2>

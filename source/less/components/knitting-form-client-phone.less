@@ -1,6 +1,19 @@
 .knitting-form-client-phone {
   position: relative;
   width: 260px;
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: 770px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: 1150px;
+  }
 }
 
 .knitting-form-client-phone__title {
@@ -11,6 +24,20 @@
   color: #63d1bb;
   text-transform: uppercase;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+    align-self: center;
+    padding: 0;
+    margin-right: 132px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+    align-self: center;
+    padding: 0;
+    margin-right: 92px;
+  }
 }
 
 .knitting-form-client-phone__title::before {
@@ -20,6 +47,14 @@
   border-bottom: 1px solid #62d1ba;
   top: 10px;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .knitting-form-client-phone__input {
@@ -34,4 +69,12 @@
   line-height: 18px;
   color: #000000;
   margin-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }

@@ -1,3 +1,7 @@
+@mobile-width: 320px;
+@tablet-width: 770px;
+@desktop-width: 1150px;
+
 @font-face {
   font-family: "opensans";
   font-style: normal;
@@ -15,15 +19,23 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 100%;
   font-family: "opensans", sans-serif;
   font-size: 15px;
   background-color: #ffffff;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .visually-hidden {

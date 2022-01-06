@@ -1,0 +1,61 @@
+.form-header {
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-header__navigation {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1150px;
+  }
+}
+
+.form-header__delivery {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    top: 12px;
+    @alfa:calc(100% - @tablet-width + 50px);
+    right: @alfa;
+    z-index: 10;
+  }
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+
+.form-header__list {
+  @media (min-width: @desktop-width) {
+   width: 500px;
+   list-style-type: none;
+   text-decoration: none;
+   font-size: 15px;
+   line-height: 24px;
+   font-weight: 700;
+   color: #000000;
+   display: flex;
+  }
+}
+
+.form-header__list li:nth-child(1) {
+   @media (min-width: @desktop-width) {
+    margin-right: 46px;
+   }
+}

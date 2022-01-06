@@ -1,6 +1,18 @@
 .knitting-form-client {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    padding-left: 219px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding-left: 225px;
+  }
 }
 
 .knitting-form-client__title {
@@ -8,6 +20,15 @@
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+  }
 }
 
 .knitting-form-client__input {
@@ -17,9 +38,45 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #000000;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
   margin-top: 4px;
+}
+
+.knitting-form-client__input--name {
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+    width: 428px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 22px;
+    width: 626px;
+  }
+}
+
+.knitting-form-client__input--surname {
+  @media (min-width: @tablet-width) {
+    margin-left: 24px;
+    width: 375px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+    width: 573px;
+  }
+}
+
+.knitting-form-client__input--patronymic {
+  @media (min-width: @tablet-width) {
+    margin-left: 24px;
+    width: 375px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 24px;
+    width: 573px;
+  }
 }

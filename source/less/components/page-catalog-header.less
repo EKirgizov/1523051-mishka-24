@@ -1,13 +1,35 @@
 .page-catalog-header {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 320px;
+  height: 79px;
   position: relative;
-  padding: 22px 0;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 664px;
+    height: 45px;
+    padding: 22px 52px;
+    border: 1px solid cyan;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 1050px;
+    padding: 32px 50px 31px 50px;
+  }
 }
 
 .page-catalog-header__logo {
   display: block;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 33%;
+    right: 501px;
+  }
 }

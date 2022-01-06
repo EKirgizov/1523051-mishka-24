@@ -5,6 +5,15 @@
   border-right: none;
   border-bottom: none;
   border-top: 1px solid #62d1ba;
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: none;
+  }
 }
 
 .knitting-form-fieldset__title {
@@ -14,4 +23,14 @@
   font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 100px;
+  }
 }

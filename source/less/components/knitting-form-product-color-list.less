@@ -1,0 +1,29 @@
+.knitting-form-product-color-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, auto);
+    padding-left: 219px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, auto);
+    padding-left: 225px;
+  }
+}
+
+.knitting-form-product-color-list__item {
+  position: relative;
+}
+
+.knitting-form-product-color-list .knitting-form-product-color-list__item:nth-child(n) {
+  margin-bottom: 23px;
+}

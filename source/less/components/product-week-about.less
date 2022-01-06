@@ -1,0 +1,128 @@
+.product-week-about {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 334px;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.product-week-about__text {
+  margin: 0;
+  width: 260px;
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    grid-row: 1/2;
+    grid-column: 2/4;
+    margin-top: 35px;
+  }
+}
+
+.product-week-about__specifications-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    margin-top: 60px;
+  }
+}
+
+.product-week-about__image {
+  margin-top: 28px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 1/-1;
+    grid-column: 2/3;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.product-week-about__price {
+  width: 260px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    margin-top: 109px;
+  }
+}
+
+.product-week-about__to-cart {
+  display: block;
+  padding: 16px 70px 16px 70px;
+  border: 2px solid #444444;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 86px 16px 86px;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin-top: 33px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 86px 16px 86px;
+    grid-row: 4/5;
+    grid-column: 2/4;
+    margin-top: 33px;
+    margin-bottom: 73px;
+  }
+}

@@ -9,7 +9,12 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  right: 31px;
+  top: 22px;
+  right: 37px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle.main-nav__toggle:active {
@@ -17,17 +22,43 @@
 }
 
 .main-nav__wrapper {
-  // display: flex;//
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 320px;
   position: absolute;
   top: 87px;
   right: 0;
+  z-index: 2;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+    background-color: transparent;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+  padding-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+  }
 }
 

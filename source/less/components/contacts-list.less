@@ -1,4 +1,23 @@
 .contacts-list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+  }
 }

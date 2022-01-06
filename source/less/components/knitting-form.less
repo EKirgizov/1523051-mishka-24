@@ -15,6 +15,15 @@
   text-align: center;
   color: #444444;
   margin-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: flex-start;
+    margin-left: 230px;
+  }
 }
 
 .knitting-form__mark {
@@ -22,4 +31,16 @@
   line-height: 16px;
   color: #444444;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 1455px;
+    left: 600px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 1485px;
+    left: 770px;
+  }
 }

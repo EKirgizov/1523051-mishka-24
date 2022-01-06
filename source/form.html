@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин изделий ручной работы «Мишка»</title>
   <link rel="stylesheet" href=".//css/style.css">
 </head>
@@ -27,15 +28,15 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__search">
-            <a href="#.html">
+            <a class="user-list__search-item" href="#.html">
               <svg class="user-list__search-icon" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
-              Поиск по сайту
+              <span class="user-list__search-title">Поиск по сайту</span>
             </a>
           </li>
-          <li class="site-list__cart">
-            <a href="#.html">
+          <li class="user-list__cart">
+            <a class="user-list__cart-item" href="#.html">
              <svg class="user-list__cart-icon" width="21" height="18">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
@@ -50,6 +51,23 @@
     <h1 class="visually-hidden">Магазин изделий ручной работы «Мишка»</h1>
     <section class="knitting">
       <div class="knitting__wrapper">
+        <div class="form-header">
+          <nav class="form-header__navigation">
+            <ul class="form-header__list">
+              <li class="form-header__item">
+                <a class="form-header__item-new" href="#">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="form-header__item">
+                <a class="form-header__item-sale" href="#">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <span class="form-header__delivery">Бесплатная доставка по России</span>
+        </div>
         <header class="knitting__header">
           <h2 class="knitting__title">
             Вязание на заказ
@@ -132,15 +150,15 @@
               <legend class="knitting-form-fieldset__title">ФИО:</legend>
               <p class="knitting-form-client">
                 <label class="knitting-form-client__title" for="client-name">Имя:</label>
-                <input class="knitting-form-client__input client-name--input" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
+                <input class="knitting-form-client__input knitting-form-client__input--name" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
               </p>
               <p class="knitting-form-client">
                 <label class="knitting-form-client__title" for="client-surname">Фамилия:</label>
-                <input class="knitting-form-client__input surname--input" placeholder="Укажите фамилию" type="text" name="client-surname" id="client-surname" required>
+                <input class="knitting-form-client__input knitting-form-client__input--surname" placeholder="Укажите фамилию" type="text" name="client-surname" id="client-surname" required>
               </p>
               <p class="knitting-form-client">
                 <label class="knitting-form-client__title" for="client-surname">Отчество:</label>
-                <input class="knitting-form-client__input patronymic--input" placeholder="Отчество, если желаете" type="text" name="client-patronymic" id="client-patronymic">
+                <input class="knitting-form-client__input knitting-form-client__input--patronymic" placeholder="Отчество, если желаете" type="text" name="client-patronymic" id="client-patronymic">
               </p>
             </fieldset>
             <p class="knitting-form-client-phone">
@@ -149,7 +167,7 @@
             </p>
             <p class="knitting-form-client-mail">
               <label class="knitting-form-client-mail__title" for="client-mail">e-mail</label>
-              <input class="kir" placeholder="Ваш Email*" type="email" name="client-mail" id="client-mail" required>
+              <input class="knitting-form-client-mail__input" placeholder="Ваш Email*" type="email" name="client-mail" id="client-mail" required>
             </p>
             <p class="knitting-form-client-text">
               <label class="knitting-form-client-text__title" for="client-text">Доп</label>
