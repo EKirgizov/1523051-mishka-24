@@ -2,23 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  width: 100%;
   height: 79px;
   position: relative;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
-    width: 664px;
-    height: 45px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
     padding: 22px 52px;
+    height: auto;
     border: 1px solid cyan;
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
+    box-sizing: border-box;
     position: relative;
-    width: 1050px;
+    width: 100%;
     padding: 32px 50px 31px 50px;
+    height: auto;
   }
 }
 
@@ -30,6 +34,6 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 33%;
-    right: 501px;
+    right: 50%;
   }
 }

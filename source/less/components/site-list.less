@@ -4,16 +4,18 @@
     flex-direction: row;
     width: 385px;
     position: absolute;
-    top: 70px;
-    @alfa:calc(100% - @tablet-width + 50px);
-    left: @alfa;
+    top: 90px;
+    left:0;
+    z-index: 3;
+    margin-left: 22px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 385px;
     position: relative;
     top:0;
     left:0;
-    grid-column: 1/2;
   }
 }
 

@@ -1,6 +1,6 @@
 .form-header {
   @media (min-width: @desktop-width) {
-    width: 1150px;
+    width: 100%;
     background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
@@ -25,8 +25,7 @@
     line-height: 24px;
     font-weight: 400;
     top: 12px;
-    @alfa:calc(100% - @tablet-width + 50px);
-    right: @alfa;
+    right: 50px;
     z-index: 10;
   }
   @media (min-width: @desktop-width) {
@@ -51,6 +50,8 @@
    font-weight: 700;
    color: #000000;
    display: flex;
+   padding: 0;
+   margin-left: 50px;
   }
 }
 

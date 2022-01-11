@@ -1,6 +1,6 @@
 .products-header {
   @media (min-width: @desktop-width) {
-    width: 1150px;
+    width: 100%;
     background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
@@ -10,9 +10,10 @@
 
 .products-header__navigation {
   display: none;
+
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1150px;
+
   }
 }
 
@@ -25,18 +26,15 @@
     line-height: 24px;
     font-weight: 400;
     top: 12px;
-    @alfa:calc(100% - @tablet-width + 50px);
-    right: @alfa;
+    right: 50px;
     z-index: 10;
   }
   @media (min-width: @desktop-width) {
-    width: 300px;
-    position: relative;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     top: 0;
-    right: 0;
+    right: 50px;
     z-index: 10;
   }
 }

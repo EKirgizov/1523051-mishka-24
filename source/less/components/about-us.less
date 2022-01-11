@@ -1,21 +1,25 @@
 .about-us {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 31px 30px 58px 30px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
     padding: 0 50px 0 50px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
     padding: 0 50px 90px 50px;
   }
-}
-
-.about-us__wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .about-us__title {

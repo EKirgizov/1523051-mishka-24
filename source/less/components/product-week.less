@@ -1,17 +1,25 @@
 .product-week {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/zigzag-line.svg");
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-position: bottom;
+}
+
+.product-week__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 107px 30px 30px 30px;
+  padding: 31px 30px 30px 30px;
   width: 260px;
-  background-image: url("../../img/zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
 
   @media (min-width: @tablet-width) {
     padding: 42px 52px 52px 52px;
     width: 666px;
     background-image: url("../../img/zigzag-line.svg");
     background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
     background-position: bottom;
   }
 

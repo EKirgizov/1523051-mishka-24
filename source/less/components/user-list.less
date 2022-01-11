@@ -1,13 +1,14 @@
 .user-list {
   @media (min-width: @tablet-width) {
     width: 347px;
-
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
   }
 }
 .user-list__search {
@@ -22,9 +23,6 @@
   margin: 0;
   display: flex;
   position: relative;
-
-  @media (min-width: @tablet-width) {
-  }
 }
 
 .user-list__search a, .user-list__cart a {

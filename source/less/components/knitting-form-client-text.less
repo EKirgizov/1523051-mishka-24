@@ -1,6 +1,9 @@
 .knitting-form-client-text {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 260px;
+  width: 100%;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -17,6 +20,7 @@
 
 .knitting-form-client-text__title {
   background-color: #ffffff;
+  width: min-content;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -25,7 +29,7 @@
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 50px;
+    margin-left: 0;
     align-self: flex-start;
     padding: 0;
     margin-right: 132px;
@@ -46,7 +50,7 @@
   position: absolute;
   width: 100%;
   border-bottom: 1px solid #62d1ba;
-  top: 10px;
+  top: 8px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {

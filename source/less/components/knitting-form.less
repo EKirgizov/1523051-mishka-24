@@ -1,6 +1,21 @@
+.knitting-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .knitting-form {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
 .knitting-form__button {
@@ -34,13 +49,12 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 1455px;
-    left: 600px;
+    bottom: 50px;
+    right: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 1485px;
-    left: 770px;
+    right: 125px;
   }
 }

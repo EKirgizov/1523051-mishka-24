@@ -1,27 +1,23 @@
 .knitting {
-  width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: 770px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1150px;
-  }
+  width: 100%;
 }
 
 .knitting__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: 770px;
+    width: 100%;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1150px;
+    width: 100%;
   }
+}
+.knitting__header {
+  width: 100%;
 }
 
 .knitting__title {
@@ -32,6 +28,7 @@
   color: #000000;
   background-color: #f1f1f1;
   padding: 73px 22px 73px 22px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -40,7 +37,8 @@
     margin: 0;
     margin-bottom: 54px;
     background-image: url("../../img/zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
     background-position: bottom;
 
   }
@@ -52,7 +50,8 @@
     margin: 0;
     margin-bottom: 98px;
     background-image: url("../../img/zigzag-fill-desktop.svg");
-    background-repeat: no-repeat;
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
     background-position: bottom;
   }
 
@@ -66,20 +65,18 @@
   color: #444444;
   margin: 0;
   margin-bottom: 14px;
+  padding: 0 29px 0 29px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
     padding: 0 50px 0 50px;
     margin-bottom: 63px;
-
-
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 225px 0 225px;
     margin: 0;
     margin-bottom: 62px;
-
   }
 }

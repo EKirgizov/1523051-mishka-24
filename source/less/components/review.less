@@ -1,12 +1,15 @@
 .review {
-  padding: 0 30px 45px 30px;
-  width: 260px;
+  width: 100%;
+  display: flex;
+  padding-bottom: 45px;
+  justify-content: center;
   background-image: url("../../img/zigzag-line.svg");
-  background-repeat: no-repeat;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
   background-position: bottom;
 
   @media (min-width: @tablet-width) {
-    width: 770px;
+    width: 100%;
     padding: 0;
     padding-bottom: 85px;
     background-image: url("../../img/zigzag-line.svg");
@@ -15,8 +18,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
-    padding: 0 50px;
+    width: 100%;
     padding-bottom: 71px;
     background-image: url("../../img/zigzag-line.svg");
     background-repeat-x: repeat;
@@ -25,6 +27,8 @@
 }
 
 .review__wrapper {
+  padding: 0 50px 0 50px;
+  width: 260px;
   display: flex;
   flex-direction: column;
 
