@@ -128,6 +128,7 @@
 }
 
 .review__mail {
+  width: min-content;
   margin: 0;
   padding: 0;
   font-size: 17px;
@@ -135,6 +136,17 @@
   font-weight: 400;
   color: #000000;
   margin-bottom: 30px;
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    border-bottom: 1px solid #ecf9f7;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -163,6 +175,24 @@
   border: 1px solid #ececec;
   width: 128px;
   margin-bottom: 38px;
+}
+
+.review__toggle-left:hover .review__toggle-left-fill,
+.review__toggle-left:focus .review__toggle-left-fill {
+  fill-opacity: 0.6;
+}
+
+.review__toggle-left:active .review__toggle-left-fill {
+  fill-opacity: 0.3;
+}
+
+.review__toggle-right:hover .review__toggle-right-fill,
+.review__toggle-right:focus .review__toggle-right-fill {
+  fill-opacity: 0.6;
+}
+
+.review__toggle-right:active .review__toggle-right-fill {
+  fill-opacity: 0.3;
 }
 
 .review__button {

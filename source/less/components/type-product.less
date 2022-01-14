@@ -20,6 +20,15 @@
   background-image: url("../../img/radio.svg");
   background-size: 42px 42px;
   left: 0;
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/radio-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/radio-down.svg");
+  }
 }
 
 .type-product__control-input[type="radio"]:checked + .type-product__control-mark {
@@ -33,4 +42,13 @@
   background-image: url("../../img/radio-active.svg");
   background-size: 42px 42px;
   content: "";
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/radio-active-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/radio-active-down.svg");
+  }
 }

@@ -72,12 +72,29 @@
   line-height: 18px;
   color: #000000;
   margin-top: 4px;
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position-x: 210px;
+  background-position-y: 15px;
+
+  &:hover,
+  &focus {
+    border-bottom: 2px solid #62d1ba;
+    background-image: url("../../img/phone-green.svg");
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+    background-image: url("../../img/phone-green.svg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 501px;
+    background-position-x: 440px;
   }
 
   @media (min-width: @desktop-width) {
     width: 700px;
+    background-position-x: 650px;
   }
 }

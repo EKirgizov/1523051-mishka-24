@@ -1,16 +1,17 @@
 .user-list {
   @media (min-width: @tablet-width) {
-    width: 347px;
+    width: 447px;
     justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
+    width: 447px;
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
   }
 }
+
 .user-list__search {
   list-style-type: none;
   margin: 0;
@@ -25,7 +26,8 @@
   position: relative;
 }
 
-.user-list__search a, .user-list__cart a {
+.user-list__search a,
+.user-list__cart a {
   margin: 0;
   display: block;
   text-decoration: none;
@@ -34,28 +36,46 @@
   line-height: 24px;
   font-weight: 700;
   padding: 26px;
+
+  &:hover,
+  &:focus {
+    color: #666666;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .user-list__search a {
-
   @media (min-width: @tablet-width) {
-    padding: 10px;
+    padding: 33px 35px 31px 35px;
+    border-left: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 35px 31px 35px;
+    border-left: 1px solid #e5e5e5;
   }
 }
 
 .user-list__cart a {
-
   @media (min-width: @tablet-width) {
-    padding: 10px;
-    padding-left: 53px;
+    padding: 36px 32px 34px 84px;
+    border-left: 1px solid #e5e5e5;
   }
 }
 
 .user-list__search-icon,
 .user-list__cart-icon {
-  border: 1px solid red;
   position: absolute;
-  left: 26px;
+  left: -20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 26px;
+  }
 }
 
 .user-list__search-icon {
@@ -70,3 +90,12 @@
     display: none;
   }
 }
+
+.user-list__search:hover .user-list__search-item .user-list__search-icon .user-list__search-icon-fill,
+.user-list__cart:hover .user-list__cart-item .user-list__cart-icon .user-list__cart-icon-fill,
+.user-list__search:focus .user-list__search-item .user-list__search-icon .user-list__search-icon-fill,
+.user-list__cart:focus .user-list__cart-item .user-list__cart-icon .user-list__cart-icon-fill {
+  fill: #63d1bb;
+  opacity: 1;
+}
+

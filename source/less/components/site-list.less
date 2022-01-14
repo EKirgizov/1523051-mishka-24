@@ -2,20 +2,19 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 385px;
     position: absolute;
-    top: 90px;
-    left:0;
+    top: 94px;
+    left: 0;
     z-index: 3;
     margin-left: 22px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    width: 385px;
+    width: 447px;
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -25,7 +24,7 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    margin-left: 28px;
+    margin: 0;
   }
 }
 
@@ -38,11 +37,30 @@
   line-height: 24px;
   font-weight: 700;
   padding: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 37px 22px 28px;
+    font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 35px 31px 35px;
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #666666;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
-.site-list__item a {
-  @media (min-width: @tablet-width) {
-    font-size: 15px;
-    padding: 10px;
+.site-list li:first-child {
+  @media (min-width: @desktop-width) {
+    border-right: 1px solid #e5e5e5;
   }
 }

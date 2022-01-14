@@ -20,6 +20,15 @@
   background-image: url("../../img/checkbox.svg");
   background-size: 42px 42px;
   left: 0;
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/checkbox-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/checkbox-down.svg");
+  }
 }
 
 .product-color__control-input[type="checkbox"]:checked + .product-color__control-mark {
@@ -33,4 +42,13 @@
   background-image: url("../../img/checkbox-active.svg");
   background-size: 42px 42px;
   content: "";
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/checkbox-active-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/checkbox-active-down.svg");
+  }
 }
