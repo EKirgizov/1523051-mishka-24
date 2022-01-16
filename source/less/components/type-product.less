@@ -42,13 +42,13 @@
   background-image: url("../../img/radio-active.svg");
   background-size: 42px 42px;
   content: "";
+}
 
-  &:hover,
-  &:focus {
-    background-image: url("../../img/radio-active-hover.svg");
-  }
+.type-product__control-input[type="radio"]:checked + .type-product__control-mark:hover::before,
+.type-product__control-input[type="radio"]:checked + .type-product__control-mark:focus::before {
+  background-image: url("../../img/radio-active-hover.svg");
+}
 
-  &:active {
-    background-image: url("../../img/radio-active-down.svg");
-  }
+.type-product__control-input[type="radio"]:checked + .type-product__control-mark:active::before {
+  background-image: url("../../img/radio-active-down.svg");
 }

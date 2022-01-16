@@ -9,7 +9,11 @@
 <body class="page-form__body">
   <header class="page-form-header">
     <a class="page-form-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      <picture>
+        <source media="(min-width: 1150px)" srcset=".//img/logotype-desktop.svg">
+        <source media="(min-width: 770px)" srcset=".//img/logotype-tablet.svg">
+        <img class="page-header__logo-image" src=".//img/logotype-mobile.svg" alt="Магазин «Мишка»">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>

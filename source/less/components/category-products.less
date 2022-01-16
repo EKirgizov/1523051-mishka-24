@@ -59,11 +59,16 @@
   position: relative;
   margin: 0;
   background-color: #fafafa;
-  background-image: url("../../img/banner.jpg");
+  background-image: url("../../img/banner-mobile.jpg");
   background-repeat: no-repeat;
   background-position-y: -20px;
   background-position-x: center;
   padding-top: 70px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/banner-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -76,6 +81,11 @@
     background-position-x: center;
     padding-top: 153px;
     margin-bottom: 42px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/banner-tablet@2x.jpg");
+      background-size: 770px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -83,6 +93,11 @@
     background-image: url("../../img/banner-desktop.jpg");
     padding-top: 0;
     margin-bottom: 54px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/banner-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 }
 
@@ -112,7 +127,7 @@
     width: 100%;
     height: 22px;
     background-image: url("../../img/zigzag-fill.svg");
-    background-repeat-x: repeat;
+    background-repeat: repeat-x;
     position: absolute;
     top: 723px;
     z-index: 10;
@@ -123,7 +138,7 @@
     width: 100%;
     height: 22px;
     background: url("../../img/zigzag-fill.svg");
-    background-repeat-x: repeat;
+    background-repeat: repeat-x;
     position: absolute;
     top: 735px;
     z-index: 10;

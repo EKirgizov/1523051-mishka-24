@@ -3,8 +3,7 @@
   display: flex;
   justify-content: center;
   background-image: url("../../img/zigzag-line.svg");
-  background-repeat-x: repeat;
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;
 }
 
@@ -18,8 +17,7 @@
     padding: 42px 52px 52px 52px;
     width: 666px;
     background-image: url("../../img/zigzag-line.svg");
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom;
   }
 
@@ -28,7 +26,6 @@
     width: 1050px;
     padding: 0 50px 0 50px;
     background-image: url("../../img/zigzag-line.svg");
-    background-repeat-x: repeat;
     background-position: bottom;
   }
 }
@@ -69,6 +66,8 @@
     line-height: 57px;
     width: 545px;
     grid-column: 2/-1;
+    position: relative;
+    z-index: 10;
   }
 }
 

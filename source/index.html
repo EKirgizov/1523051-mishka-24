@@ -9,7 +9,11 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src=".//img/logotype-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      <picture>
+        <source media="(min-width: 1150px)" srcset=".//img/logotype-desktop.svg">
+        <source media="(min-width: 770px)" srcset=".//img/logotype-tablet.svg">
+        <img class="page-header__logo-image" src=".//img/logotype-mobile.svg" alt="Магазин «Мишка»">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -156,7 +160,11 @@
             </dd>
           </div>
         </dl>
-        <img class="product-week-about__image" src="img/triple-set-cart.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-cart-desktop.jpg 1x, img/triple-set-cart-desktop@2x.jpg 2x">
+          <source media="(min-width: 770px)" srcset="img/triple-set-cart-tablet.jpg 1x, img/triple-set-cart-tablet@2x.jpg 2x">
+          <img class="product-week-about__image" src="img/triple-set-cart-mobile.jpg" srcset="img/triple-set-cart-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+        </picture>
         <span class="product-week-about__price">
           Цена: 990 руб.
         </span>
@@ -267,7 +275,11 @@
             </dd>
           </div>
         </dl>
-        <img class="contacts__map" src=".//img/map.jpg" width="320" height="454" alt="Как нас найти">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 770px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Как нас найти">
+        </picture>
         <a class="contacts__write-to-us button" href="">
           Напишите нам
         </a>

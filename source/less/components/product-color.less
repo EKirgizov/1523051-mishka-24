@@ -42,13 +42,13 @@
   background-image: url("../../img/checkbox-active.svg");
   background-size: 42px 42px;
   content: "";
+}
 
-  &:hover,
-  &:focus {
-    background-image: url("../../img/checkbox-active-hover.svg");
-  }
+.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark:hover::before,
+.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark:focus::before {
+  background-image: url("../../img/checkbox-active-hover.svg");
+}
 
-  &:active {
-    background-image: url("../../img/checkbox-active-down.svg");
-  }
+.product-color__control-input[type="checkbox"]:checked + .product-color__control-mark:active::before {
+  background-image: url("../../img/checkbox-active-down.svg");
 }
