@@ -1,6 +1,7 @@
 .contacts-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 62px;
 
   @media (min-width: @tablet-width) {
     padding-left: 50px;
@@ -19,5 +20,13 @@
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.contacts-list div:first-child {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    height: min-content;
   }
 }

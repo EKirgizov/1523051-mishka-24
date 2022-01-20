@@ -4,6 +4,7 @@
   width: 260px;
   border: 1px solid #ececec;
   align-self: center;
+  margin-bottom: 58px;
 
   @media (min-width: @tablet-width) {
     width: 670px;
@@ -34,11 +35,17 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     grid-row: 2/3;
+    padding: 41px 107px 24px 107px;
+    background-position-x: 42px;
+    background-position-y: 39px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 1/2;
     grid-column: 2/3;
+    padding: 96px 79px 27px 79px;
+    background-position-x: 79px;
+    background-position-y: 47px;
   }
 }
 
@@ -48,16 +55,20 @@
   font-weight: 400;
   color: #444444;
   margin-bottom: 41px;
+  padding: 0 32px 0 34px;
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
     grid-row: 3/4;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 2/3;
     grid-column: 2/3;
+    padding: 0 36px 0 79px;
+    margin-bottom: 41px;
   }
 }
 
@@ -73,12 +84,16 @@
   text-align: center;
   color: #444444;
   margin-bottom: 33px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     grid-row: 4/5;
+    width: 584px;
+    justify-self: center;
   }
 
   @media (min-width: @desktop-width) {
+    width: 170px;
     grid-row: 3/4;
     grid-column: 2/3;
   }
@@ -121,6 +136,7 @@
 
   @media (min-width: @desktop-width) {
     width: 683px;
+    height: 456px;
     grid-row: 1/-1;
     grid-column: 1/2;
     background-image: url("../../img/video-desktop.jpg");

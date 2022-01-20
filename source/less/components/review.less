@@ -11,14 +11,15 @@
     width: 100%;
     padding: 0;
     padding-bottom: 85px;
-    background-image: url("../../img/zigzag-line.svg");
+    background-image: url("../../img/zigzag-line-desktop.svg");
     background-position: bottom;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     padding-bottom: 71px;
-    background-image: url("../../img/zigzag-line.svg");
+    background-image: url("../../img/zigzag-line-desktop.svg");
     background-position: bottom;
   }
 }
@@ -133,17 +134,6 @@
   font-weight: 400;
   color: #000000;
   margin-bottom: 30px;
-  border-bottom: 1px solid #62d1ba;
-
-  &:hover,
-  &:focus {
-    color: #46c1ae;
-    border-bottom: 1px solid #46c1ae;
-  }
-
-  &:active {
-    border-bottom: 1px solid #ecf9f7;
-  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -163,6 +153,7 @@
     position: absolute;
     bottom: 0;
     right: 50px;
+    width: 160px;
   }
 }
 
@@ -172,23 +163,29 @@
   border: 1px solid #ececec;
   width: 128px;
   margin-bottom: 38px;
+  padding: 13px 38px 13px 38px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 13px 15px 13px 15px;
+  }
 }
 
-.review__toggle-left:hover .review__toggle-left-fill,
-.review__toggle-left:focus .review__toggle-left-fill {
+.review__toggle-left:hover,
+.review__toggle-left:focus {
   fill-opacity: 0.6;
 }
 
-.review__toggle-left:active .review__toggle-left-fill {
+.review__toggle-left:active {
   fill-opacity: 0.3;
 }
 
-.review__toggle-right:hover .review__toggle-right-fill,
-.review__toggle-right:focus .review__toggle-right-fill {
+.review__toggle-right:hover,
+.review__toggle-right:focus {
   fill-opacity: 0.6;
 }
 
-.review__toggle-right:active .review__toggle-right-fill {
+.review__toggle-right:active {
   fill-opacity: 0.3;
 }
 

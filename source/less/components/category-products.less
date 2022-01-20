@@ -27,12 +27,14 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    width: 300px;
+    display: block;
     position: absolute;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    top: 25px;
+    text-align: right;
+    top: 22px;
     right: 50px;
     z-index: 10;
   }
@@ -92,7 +94,7 @@
     width: 100%;
     background-image: url("../../img/banner-desktop.jpg");
     padding-top: 0;
-    margin-bottom: 54px;
+    margin-bottom: 115px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/banner-desktop@2x.jpg");
@@ -129,7 +131,7 @@
     background-image: url("../../img/zigzag-fill.svg");
     background-repeat: repeat-x;
     position: absolute;
-    top: 723px;
+    bottom: 0;
     z-index: 10;
   }
 
@@ -140,7 +142,7 @@
     background: url("../../img/zigzag-fill.svg");
     background-repeat: repeat-x;
     position: absolute;
-    top: 735px;
+    bottom: 0;
     z-index: 10;
   }
 }

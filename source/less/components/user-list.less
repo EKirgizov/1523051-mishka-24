@@ -1,5 +1,6 @@
 .user-list {
   @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
     width: 447px;
     justify-content: flex-end;
   }
@@ -91,11 +92,22 @@
   }
 }
 
-.user-list__search:hover .user-list__search-item .user-list__search-icon .user-list__search-icon-fill,
-.user-list__cart:hover .user-list__cart-item .user-list__cart-icon .user-list__cart-icon-fill,
-.user-list__search:focus .user-list__search-item .user-list__search-icon .user-list__search-icon-fill,
-.user-list__cart:focus .user-list__cart-item .user-list__cart-icon .user-list__cart-icon-fill {
-  fill: #63d1bb;
-  opacity: 1;
+.user-list__search .user-list__search-item .user-list__search-icon,
+.user-list__cart .user-list__cart-item .user-list__cart-icon {
+  opacity: 0.2;
+  fill: #000000;
 }
 
+.user-list__search:hover .user-list__search-item .user-list__search-icon,
+.user-list__cart:hover .user-list__cart-item .user-list__cart-icon,
+.user-list__search:focus .user-list__search-item .user-list__search-icon,
+.user-list__cart:focus .user-list__cart-item .user-list__cart-icon {
+  opacity: 1;
+  fill: #63d1bb;
+}
+
+.user-list__search:active .user-list__search-item .user-list__search-icon,
+.user-list__cart:active .user-list__cart-item .user-list__cart-icon {
+  opacity: 0.3;
+  fill: #63d1bb;
+}

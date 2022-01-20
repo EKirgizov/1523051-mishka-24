@@ -9,12 +9,17 @@
   flex-direction: column;
   width: 320px;
   align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 770px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
+    background-image: url("../../img/flag.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +30,8 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
+    background-position-x: 110px;
+    background-position-y: 110px;
   }
 }
 
@@ -98,5 +105,22 @@
   @media (min-width: @desktop-width) {
     grid-column: 4/-1;
     grid-row: 1/-1;
+  }
+}
+
+.contacts__map-pin {
+  position: absolute;
+  z-index: 20;
+  top: 450px;
+  left: 130px;
+
+  @media (min-width: @tablet-width) {
+    top: 410px;
+    left: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 210px;
+    left: 810px;
   }
 }
