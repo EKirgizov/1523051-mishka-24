@@ -6,38 +6,35 @@
 .knitting-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
   position: relative;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 100%;
   }
 }
 
 .knitting-form__button {
-  display: block;
   padding: 18px 37px 18px 37px;
   border: 2px solid #444444;
-  background-color: #ffffff;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: #444444;
   margin-bottom: 55px;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     align-self: flex-start;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     align-self: flex-start;
-    margin-left: 230px;
+    margin-left: 225px;
+    margin-right: 150px;
   }
 }
 
@@ -45,16 +42,53 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
-  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    bottom: 50px;
-    right: 0;
+    order: 3;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+}
+
+.knitting-form__background {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0 50px 0;
+  }
+}
+
+.knitting-form__background-product-color {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0 27px 0;
+  }
+}
+
+.knitting-form__button-wrapper {
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 668px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 1050px;
+    justify-content: flex-start;
   }
 }

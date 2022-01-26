@@ -1,0 +1,76 @@
+.modal {
+  position: relative;
+  margin: auto;
+  width: 320px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  padding: 28px 30px 46px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+    padding: 37px 92px 46px 92px;
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 11px;
+  }
+}
+
+.modal__slogan {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal__button {
+  border: none;
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #63d1bb;
+  width: 260px;
+  padding: 18px 68px 18px 68px;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    padding: 18px 113px 18px 113px;
+  }
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  background-color: #46c1ae;;
+  cursor: pointer;
+}
+
+.modal__button:active {
+  color: #000000;
+}

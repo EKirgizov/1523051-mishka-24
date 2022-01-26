@@ -1,6 +1,8 @@
 .knitting-form-client {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -33,7 +35,6 @@
 
 .knitting-form-client__input {
   box-sizing: border-box;
-  width: 260px;
   height: 52px;
   border-top: none;
   border-left: none;
@@ -106,4 +107,8 @@
     margin-left: 24px;
     width: 573px;
   }
+}
+
+.knitting-form-client--patronymic {
+  margin-bottom: 0;
 }

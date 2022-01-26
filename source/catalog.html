@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин изделий ручной работы «Мишка»</title>
   <link rel="stylesheet" href=".//css/style.css">
+  <link rel="icon" href=".//favicon.ico">
 </head>
 <body class="page-catalog__body">
   <svg style="display: none">
@@ -206,7 +207,7 @@
       <div class="social page-footer--social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
               <svg class="social__link-insta-icon" width="22" height="21">
                 <use href="#social__link-insta-icon"></use>
               </svg>
@@ -214,7 +215,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
               <svg class="social__link-fb-icon" width="15" height="28">
                 <use href="#social__link-fb-icon"></use>
                 </svg>
@@ -222,7 +223,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
               <svg class="social__link-twitter-icon" width="23" height="20">
                 <use href="#social__link-twitter-icon"></use>
               </svg>
@@ -233,7 +234,7 @@
       </div>
       <div class="page-footer__copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg class="copyright__link-icon" width="27" height="34">
             <use href="#copyright__link-icon"></use>
           </svg>
@@ -241,5 +242,58 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container modal-container--off">
+    <div class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span class="modal__slogan">Выберите размер:</span>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="size-list">
+            <li class="size-list__item">
+              <label class="size">
+                <input class="visually-hidden size__control-input" type="checkbox" name="s" checked>
+                <span class="size__control-mark"></span>
+                <span class="size__control-label">S</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size">
+                <input class="visually-hidden size__control-input" type="checkbox" name="m" checked>
+                <span class="size__control-mark"></span>
+                <span class="size__control-label">M</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size">
+                <input class="visually-hidden size__control-input" type="checkbox" name="l" checked>
+                <span class="size__control-mark"></span>
+                <span class="size__control-label">L</span>
+              </label>
+            </li>
+          </ul>
+          <button class="modal__button" type="submit">
+            Добавить
+          </button>
+        </form>
+    </div>
+  </div>
+  <script>
+
+    let cart = document.querySelector('.catalog-list__cart-icon');
+    let mod = document.querySelector('.modal-container');
+
+    cart.onclick = function() {
+      if (mod.classList.contains('modal-container--off')) {
+        mod.classList.remove('modal-container--off');
+        mod.classList.add('modal-container--on');
+      }
+    };
+    mod.onclick = function() {
+
+      if (mod.classList.contains('modal-container--on')) {
+        mod.classList.remove('modal-container--on');
+        mod.classList.add('modal-container--off');
+      }
+    };
+  </script>
 </body>
 </html>

@@ -2,24 +2,27 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 260px;
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 770px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 100px;
     width: 1150px;
   }
 }
 
 .knitting-form-client-phone__title {
-  background-color: #ffffff;
   width: min-content;
   font-size: 17px;
   line-height: 16px;
@@ -27,12 +30,14 @@
   color: #63d1bb;
   text-transform: uppercase;
   padding-right: 20px;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
     align-self: center;
     padding: 0;
     margin-right: 132px;
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,9 +65,30 @@
   }
 }
 
+.knitting-form-client-phone__wrapper {
+  width: 100%;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
+
+.knitting-form-client-phone__icon {
+  fill-opacity: 0.2;
+  fill: #000000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .knitting-form-client-phone__input {
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   height: 52px;
   border-top: none;
   border-left: none;
@@ -72,29 +98,25 @@
   line-height: 18px;
   color: #000000;
   margin-top: 4px;
-  background-image: url("../../img/phone.svg");
-  background-repeat: no-repeat;
-  background-position-x: 210px;
-  background-position-y: 15px;
-
-  &:hover,
-  &focus {
-    border-bottom: 2px solid #62d1ba;
-    background-image: url("../../img/phone-green.svg");
-  }
-
-  &:active {
-    border-bottom: 2px solid #62d1ba;
-    background-image: url("../../img/phone-green.svg");
-  }
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     width: 501px;
-    background-position-x: 440px;
   }
 
   @media (min-width: @desktop-width) {
     width: 700px;
-    background-position-x: 650px;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:hover ~ .knitting-form-client-phone__icon,
+  &:focus ~ .knitting-form-client-phone__icon {
+    fill-opacity: 1;
+    fill: #62d1ba;
   }
 }
+

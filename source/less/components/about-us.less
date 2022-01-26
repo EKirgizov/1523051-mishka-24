@@ -7,18 +7,17 @@
 .about-us__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 31px 30px 58px 30px;
+  padding: 31px 30px 26px 30px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
-    padding: 0 50px 0 50px;
-    margin-bottom: 83px;
+    padding: 56px 50px 51px 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    padding: 0 50px 90px 50px;
+    padding: 68px 50px 58px 50px;
   }
 }
 
@@ -26,11 +25,14 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     width: 417px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 41.5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,6 +40,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-left: 175px;
+    margin-bottom: 39px;
   }
 }
 
@@ -48,15 +51,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     width: 668px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 334px 334px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    width: 1050px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
+    width: 700px;
+    grid-template-columns: 350px 350px;
+    margin: 0 auto;
   }
 }
 
@@ -68,6 +70,7 @@
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -75,7 +78,7 @@
   }
 }
 
-.about-us__item:nth-child(1) .about-us__description {
+.about-us__item--flower .about-us__description {
   margin: 0;
   padding-top: 54px;
   background-image: url("../../img/icon-flower.svg");
@@ -89,21 +92,7 @@
   }
 }
 
-.about-us__item:nth-child(1) {
-  margin-bottom: 30px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 1/2;
-    grid-column: 1/4;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 1/2;
-    grid-column: 2/4;
-  }
-}
-
-.about-us__item:nth-child(2) .about-us__description {
+.about-us__item--money .about-us__description {
   margin: 0;
   padding-top: 53px;
   background-image: url("../../img/icon-money.svg");
@@ -117,21 +106,7 @@
   }
 }
 
-.about-us__item:nth-child(2) {
-  margin-bottom: 35px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 1/2;
-    grid-column: 4/7;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 1/2;
-    grid-column: 4/6;
-  }
-}
-
-.about-us__item:nth-child(3) .about-us__description {
+.about-us__item--heart .about-us__description {
   margin: 0;
   padding-top: 48px;
   background-image: url("../../img/icon-heart.svg");
@@ -145,21 +120,7 @@
   }
 }
 
-.about-us__item:nth-child(3) {
-  margin-bottom: 32px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 2/3;
-    grid-column: 1/4;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 2/3;
-    grid-column: 2/4;
-  }
-}
-
-.about-us__item:nth-child(4) .about-us__description {
+.about-us__item--clew .about-us__description {
   margin: 0;
   padding-top: 51px;
   background-image: url("../../img/icon-clew.svg");
@@ -173,21 +134,7 @@
   }
 }
 
-.about-us__item:nth-child(4) {
-  margin-bottom: 33px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 2/3;
-    grid-column: 4/7;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 2/3;
-    grid-column: 4/6;
-  }
-}
-
-.about-us__item:nth-child(5) .about-us__description {
+.about-us__item--rocet .about-us__description {
   margin: 0;
   padding-top: 49px;
   background-image: url("../../img/icon-rocet.svg");
@@ -201,23 +148,7 @@
   }
 }
 
-.about-us__item:nth-child(5) {
-  margin-bottom: 32px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 3/4;
-    grid-column: 1/4;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 3/4;
-    grid-column: 2/4;
-    margin-bottom: 0;
-  }
-}
-
-.about-us__item:nth-child(6) .about-us__description {
+.about-us__item--present .about-us__description {
   margin: 0;
   padding-top: 52px;
   background-image: url("../../img/icon-present.svg");
@@ -228,21 +159,5 @@
 
   @media (min-width: @tablet-width) {
     width: 263px;
-  }
-}
-
-.about-us__item:nth-child(6) {
-  margin-bottom: 32px;
-
-  @media (min-width: @tablet-width) {
-    grid-row: 3/4;
-    grid-column: 4/7;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 3/4;
-    grid-column: 4/6;
-    margin-bottom: 0;
   }
 }

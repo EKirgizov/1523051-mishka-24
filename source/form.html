@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин изделий ручной работы «Мишка»</title>
   <link rel="stylesheet" href=".//css/style.css">
+  <link rel="icon" href=".//favicon.ico">
 </head>
 <body class="page-form__body">
   <svg style="display: none">
@@ -26,6 +27,17 @@
     </symbol>
     <symbol id="copyright__link-icon" viewBox="0 0 27 34">
       <path d="M13.6506 0H13.5502L0 1.39589V26.0235L13.5502 34L27 26.0235V1.39589L13.6506 0ZM25.0929 12.0645L13.5502 5.28446V5.18475H13.4498L13.3494 5.08504V5.18475L1.90706 12.0645V3.09091L13.4498 1.89443L25.0929 3.09091V12.0645ZM13.4498 6.78006L24.9926 13.4604L20.4758 16.0528L13.3494 11.8651V13.261L19.2714 16.7507L18.368 17.2493L13.3494 14.2581V15.654L17.1636 17.9472L16.3606 18.4457L13.3494 16.651V18.0469L15.2565 19.1437L13.4498 20.2405L2.00744 13.5601L13.4498 6.78006ZM1.90706 15.0557L13.3494 21.8358V22.8328L5.42007 18.1466V19.5425L13.4498 24.3284V25.4252L5.42007 20.739V22.1349L13.4498 26.9208L21.5799 22.0352V16.8504L24.9926 14.8563V24.827L13.4498 31.7067L1.90706 24.9267V15.0557Z"/>
+    </symbol>
+    <symbol id="knitting-form-client-phone__icon" viewBox="0 0 25 24">
+      <g>
+      <path d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"/>
+      <path d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4557 0 12.6008 0V1.48147Z"/>
+      <path d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"/>
+      <path d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z"/>
+      </g>
+    </symbol>
+    <symbol id="mail" viewBox="0 0 32 21">
+      <path d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"/>
     </symbol>
   </svg>
   <header class="page-form-header">
@@ -123,7 +135,7 @@
     </section>
     <section class="knitting-form-wrapper">
       <form class="knitting-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="knitting-form-fieldset type-product-fieldset">
+          <fieldset class="knitting-form-fieldset knitting-form-fieldset--type-product">
               <legend class="knitting-form-fieldset__title">Тип</legend>
               <ul class="knitting-form-type-product-list">
                   <li class="knitting-form-type-product-list__item">
@@ -142,7 +154,8 @@
                   </li>
               </ul>
           </fieldset>
-          <fieldset class="knitting-form-fieldset product-color-fieldset">
+          <div class="knitting-form__background-product-color">
+          <fieldset class="knitting-form-fieldset knitting-form-fieldset--product-color">
               <legend class="knitting-form-fieldset__title">Цвет:</legend>
               <ul class="knitting-form-product-color-list">
                   <li class="knitting-form-product-color-list__item">
@@ -189,35 +202,50 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset class="knitting-form-fieldset client-fieldset">
+            </div>
+            <fieldset class="knitting-form-fieldset knitting-form-fieldset--client">
               <legend class="knitting-form-fieldset__title">ФИО:</legend>
               <p class="knitting-form-client">
                 <label class="knitting-form-client__title" for="client-name">Имя:</label>
-                <input class="knitting-form-client__input knitting-form-client__input--name" placeholder="Введите ваше имя" type="text" name="client-name" id="client-name" required>
+                <input class="knitting-form-client__input knitting-form-client__input--name" placeholder="Введите ваше имя*" type="text" name="client-name" id="client-name" required>
               </p>
               <p class="knitting-form-client">
                 <label class="knitting-form-client__title" for="client-surname">Фамилия:</label>
-                <input class="knitting-form-client__input knitting-form-client__input--surname" placeholder="Укажите фамилию" type="text" name="client-surname" id="client-surname" required>
+                <input class="knitting-form-client__input knitting-form-client__input--surname" placeholder="Укажите фамилию*" type="text" name="client-surname" id="client-surname" required>
               </p>
-              <p class="knitting-form-client">
+              <p class="knitting-form-client knitting-form-client--patronymic">
                 <label class="knitting-form-client__title" for="client-surname">Отчество:</label>
                 <input class="knitting-form-client__input knitting-form-client__input--patronymic" placeholder="Отчество, если желаете" type="text" name="client-patronymic" id="client-patronymic">
               </p>
             </fieldset>
-            <p class="knitting-form-client-phone">
+            <div class="knitting-form__background">
+            <div class="knitting-form-client-phone">
               <label class="knitting-form-client-phone__title" for="client-phone">Тел</label>
-              <input class="knitting-form-client-phone__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="client-phone" id="client-phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
-            </p>
-            <p class="knitting-form-client-mail">
+                <div class="knitting-form-client-phone__wrapper">
+                  <input class="knitting-form-client-phone__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="client-phone" id="client-phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
+                  <svg class="knitting-form-client-phone__icon" width="25" height="24">
+                    <use href="#knitting-form-client-phone__icon"></use>
+                  </svg>
+                </div>
+              </div>
+            <div class="knitting-form-client-mail">
               <label class="knitting-form-client-mail__title" for="client-mail">e-mail</label>
+              <div class="knitting-form-client-mail__wrapper">
               <input class="knitting-form-client-mail__input" placeholder="Ваш Email*" type="email" name="client-mail" id="client-mail" required>
-            </p>
-            <p class="knitting-form-client-text">
+              <svg class="knitting-form-client-mail__icon" width="25" height="24">
+                <use href="#mail"></use>
+              </svg>
+            </div>
+            </div>
+            </div>
+            <div class="knitting-form-client-text">
               <label class="knitting-form-client-text__title" for="client-text">Доп</label>
               <textarea class="knitting-form-client-text__input" id="client-text" name="client-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </p>
-            <span class="knitting-form__mark">*Поля обязательны для заполнения</span>
-            <button class="knitting-form__button button" type="submit">Отправить заказ</button>
+            </div>
+            <div class="knitting-form__button-wrapper">
+              <span class="knitting-form__mark">*Поля обязательны для заполнения</span>
+              <button class="knitting-form__button button" type="submit">Отправить заказ</button>
+          </div>
       </form>
     </section>
   </main>
@@ -229,7 +257,7 @@
       <div class="social page-footer--social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
               <svg class="social__link-insta-icon" width="22" height="21">
                 <use href="#social__link-insta-icon"></use>
               </svg>
@@ -237,7 +265,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
               <svg class="social__link-fb-icon" width="15" height="28">
                 <use href="#social__link-fb-icon"></use>
                 </svg>
@@ -245,7 +273,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
               <svg class="social__link-twitter-icon" width="23" height="20">
                 <use href="#social__link-twitter-icon"></use>
               </svg>
@@ -256,7 +284,7 @@
       </div>
       <div class="page-footer__copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg class="copyright__link-icon" width="27" height="34">
             <use href="#copyright__link-icon"></use>
           </svg>

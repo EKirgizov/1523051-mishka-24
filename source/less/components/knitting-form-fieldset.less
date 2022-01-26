@@ -5,14 +5,16 @@
   border-right: none;
   border-bottom: none;
   border-top: 1px solid #62d1ba;
-  padding-top: 10px;
+  width: 260px;
 
   @media (min-width: @tablet-width) {
     border-top: none;
+    width: 668px;
   }
 
   @media (min-width: @desktop-width) {
     border-top: none;
+    width: 1050px;
   }
 }
 
@@ -33,5 +35,29 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     left: 100px;
+  }
+}
+
+.knitting-form-fieldset--client {
+  padding: 15px 0 15px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 0 50px 0;
+  }
+}
+
+.knitting-form-fieldset--product-color {
+  padding: 15px 0 15px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.knitting-form-fieldset--type-product {
+  padding: 15px 0 15px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 0 50px 0;
   }
 }
