@@ -9,40 +9,39 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
 
 // Styles
-
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('source/less/style.less', {sourcemaps:true})
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
-      //csso()
+      csso()
     ]))
-    //.pipe(rename('style.min.css'))
-    .pipe(rename('style.css'))
-    //.pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', {sourcemaps:'.'}))
     .pipe(browser.stream());
 }
 
 //html
 
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace:true}))
     .pipe(gulp.dest('build'));
 }
 
 //IMG
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
 }
 
-const optimizeImagesCatalog = () => {
+export const optimizeImagesCatalog = () => {
   return gulp.src('source/img/catalog/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img/catalog'));
@@ -50,7 +49,7 @@ const optimizeImagesCatalog = () => {
 
 // webp
 
-const Webp = () => {
+export const Webp = () => {
   return gulp.src('source/img/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
@@ -58,7 +57,7 @@ const Webp = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-const WebpCatalog = () => {
+export const WebpCatalog = () => {
   return gulp.src('source/img/catalog/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
@@ -67,13 +66,14 @@ const WebpCatalog = () => {
 }
 
 //SVG
-const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+export const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
-const sprite = () => {
+/*
+export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -81,14 +81,15 @@ const sprite = () => {
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
-}
+}*/
 
 // Copy
 
-const copy = (done) => {
+export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/img/sprite.svg',
   ], {
     base: 'source'
   })
@@ -98,16 +99,16 @@ const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return del('build');
 };
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -132,12 +133,24 @@ export const build = gulp.series(
     styles,
     html,
     svg,
-    sprite,
     Webp,
     WebpCatalog
   ),
 );
 
 export default gulp.series(
-  html, styles, server, watcher
-);
+  clean,
+  copy,
+  optimizeImages,
+  optimizeImagesCatalog,
+  gulp.parallel(
+    styles,
+    html,
+    svg,
+    Webp,
+    WebpCatalog
+  ),
+  gulp.series(
+    server,
+    watcher
+));

@@ -5,6 +5,12 @@
   background-image: url("../../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
 }
 
 .product-week__wrapper {
@@ -13,20 +19,16 @@
   padding: 31px 30px 30px 30px;
   width: 260px;
 
+
   @media (min-width: @tablet-width) {
     padding: 42px 52px 52px 52px;
     width: 666px;
-    background-image: url("../../img/zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     width: 1050px;
     padding: 0 50px 0 50px;
-    background-image: url("../../img/zigzag-line.svg");
-    background-position: bottom;
   }
 }
 

@@ -96,6 +96,19 @@
   color: #000000;
 }
 
+.category-products__item-new:hover,
+.category-products__item-sale:hover,
+.category-products__item-new:focus,
+.category-products__item-sale:focus {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.category-products__item-new:active,
+.category-products__item-sale:active {
+  opacity: 0.3;
+}
+
 .category-products-list__item .category-products-list__interior-icon,
 .category-products-list__item .category-products-list__toy-icon {
   opacity: 0.5;
@@ -150,4 +163,9 @@
   @media (min-width: @tablet-width) {
     top: 26px;
   }
+}
+
+.category-products-list__item:active .category-products-list__interior-icon,
+.category-products-list__item:active .category-products-list__toy-icon {
+  opacity: 0.7;
 }
