@@ -34,7 +34,7 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    top: 25px;
+    top: 21px;
     right: 50px;
     z-index: 10;
   }
@@ -57,12 +57,13 @@
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin-top: 21px;
   }
 }
 
 .products-header__list li:nth-child(1) {
   @media (min-width: @desktop-width) {
-    margin-right: 46px;
+    margin-right: 63px;
   }
 }
 
@@ -74,3 +75,15 @@
   color: #000000;
 }
 
+.products-header__item-new:hover,
+.products-header__item-sale:hover,
+.products-header__item-new:focus,
+.products-header__item-sale:focus {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.products-header__item-new:active,
+.products-header__item-sale:active {
+  opacity: 0.3;
+}

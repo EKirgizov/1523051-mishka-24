@@ -19,7 +19,6 @@
 }
 
 .knitting-form-fieldset__title {
-  padding: 15px 10px 15px 0;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -29,12 +28,32 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 20px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 100px;
+    left: 62px;
+  }
+}
+
+.knitting-form-fieldset__title--type-product {
+  padding: 13px 22px 10px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 22px 10px 0;
+  }
+}
+
+.knitting-form-fieldset__title--product-color {
+  padding: 0 17px 0 0;
+}
+
+.knitting-form-fieldset__title--client {
+  padding: 13px 17px 13px 0;
+
+  @media (min-width: @tablet-width) {
+    top: 54px;
   }
 }
 
@@ -55,9 +74,9 @@
 }
 
 .knitting-form-fieldset--type-product {
-  padding: 15px 0 15px 0;
+  padding: 15px 0 32px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 0 50px 0;
+    padding: 37px 0 56px 0;
   }
 }

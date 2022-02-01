@@ -14,7 +14,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
-    padding-left: 225px;
+    padding-left: 175px;
   }
 }
 
@@ -22,6 +22,14 @@
   position: relative;
 }
 
-.knitting-form-type-product-list li:first-child {
-  margin-bottom: 9px;
+.knitting-form-type-product-list li {
+  margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.knitting-form-type-product-list li:last-child {
+  margin-bottom: 0;
 }

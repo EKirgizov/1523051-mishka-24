@@ -29,7 +29,7 @@
   font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
-  padding-right: 20px;
+  padding-right: 27px;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
@@ -41,10 +41,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 100px;
+    margin-left: 63px;
     align-self: center;
     padding: 0;
-    margin-right: 92px;
+    margin-right: 79px;
   }
 }
 
@@ -82,8 +82,17 @@
   fill-opacity: 0.2;
   fill: #000000;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 9px;
+
+  @media (min-width: @tablet-width) {
+    right: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 8px;
+    top: 12px;
+  }
 }
 
 .knitting-form-client-phone__input {
@@ -94,6 +103,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
+  font-family: "opensans", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -102,6 +112,8 @@
 
   @media (min-width: @tablet-width) {
     width: 501px;
+    font-size: 19px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {

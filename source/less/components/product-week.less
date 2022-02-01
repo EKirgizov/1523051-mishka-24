@@ -7,16 +7,20 @@
   background-position: bottom;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-image: url("../../img/zigzag-line-tablet.svg");
     background-repeat: repeat-x;
     background-position: bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
   }
 }
 
 .product-week__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 31px 30px 30px 30px;
+  padding: 31px 30px 38px 30px;
   width: 260px;
 
 
@@ -84,6 +88,7 @@
   font-weight: 700;
   color: #63d1bb;
   margin-bottom: 17px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -91,7 +96,7 @@
     font-size: 17px;
     line-height: 17px;
     width: 120px;
-    text-align: end;
+    text-align: center;
     align-self: center;
   }
 

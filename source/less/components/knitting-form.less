@@ -21,20 +21,23 @@
 }
 
 .knitting-form__button {
-  padding: 18px 37px 18px 37px;
+  padding: 12px 39px 12px 39px;
   border: 2px solid #444444;
   margin-bottom: 55px;
   margin-top: 30px;
 
   @media (min-width: @tablet-width) {
+    padding: 14px 30px 14px 30px;
     align-self: flex-start;
     margin-top: 0;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     align-self: flex-start;
-    margin-left: 225px;
-    margin-right: 150px;
+    margin-left: 175px;
+    margin-right: 167px;
+    margin-bottom: 47px;
   }
 }
 
@@ -47,7 +50,11 @@
     order: 3;
     font-size: 17px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
   }
 }
 
@@ -62,6 +69,12 @@
   }
 }
 
+.knitting-form__background--client {
+  @media (min-width: @tablet-width) {
+    padding: 47px 0 47px 0;
+  }
+}
+
 .knitting-form__background-product-color {
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
@@ -69,7 +82,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 50px 0 27px 0;
+    padding: 50px 0 50px 0;
   }
 }
 

@@ -10,6 +10,7 @@
     width: 670px;
     display: grid;
     grid-template-rows: repeat(4, auto);
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,6 +18,7 @@
     display: grid;
     grid-template-columns: 683px 367px;
     grid-template-rows: repeat(3, auto);
+    margin-bottom: 100px;
   }
 }
 
@@ -26,24 +28,24 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  padding: 21px 13px 26px 91px;
+  padding: 23px 13px 26px 91px;
   background-image: url("../../img/video.svg");
   background-repeat: no-repeat;
-  background-position-x: 10%;
-  background-position-y: center;
+  background-position-x: 35px;
+  background-position-y: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     grid-row: 2/3;
-    padding: 41px 107px 24px 107px;
+    padding: 37px 107px 24px 107px;
     background-position-x: 42px;
-    background-position-y: 39px;
+    background-position-y: 35px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 1/2;
     grid-column: 2/3;
-    padding: 96px 79px 27px 79px;
+    padding: 96px 79px 14px 79px;
     background-position-x: 79px;
     background-position-y: 47px;
   }
@@ -55,6 +57,7 @@
   font-weight: 400;
   color: #444444;
   margin-bottom: 41px;
+  margin-top: 30px;
   padding: 0 32px 0 34px;
 
   @media (min-width: @tablet-width) {
@@ -62,31 +65,35 @@
     line-height: 30px;
     grid-row: 3/4;
     margin-top: 0;
+    padding: 0 38px 0 38px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 2/3;
     grid-column: 2/3;
     padding: 0 36px 0 79px;
-    margin-bottom: 41px;
+    margin-bottom: 32px;
   }
 }
 
 .process__order {
-  padding: 18px 11px 18px 11px;
+  padding: 14px 19px 12px 19px;
   margin-bottom: 33px;
   align-self: center;
 
   @media (min-width: @tablet-width) {
     grid-row: 4/5;
-    width: 584px;
+    width: 544px;
     justify-self: center;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 170px;
+    align-self: flex-start;
+    width: 190px;
     grid-row: 3/4;
     grid-column: 2/3;
+    margin-left: 18px;
   }
 }
 
@@ -117,6 +124,7 @@
 
   @media (min-width: @tablet-width) {
     width: 670px;
+    height: 455px;
     grid-row: 1/2;
     background-image: url("../../img/video-tablet.jpg");
     background-size: 670px;

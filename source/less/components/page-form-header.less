@@ -30,9 +30,14 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 4px;
+  }
+
   @media (min-width: @desktop-width) {
+    margin-top: 0;
     position: absolute;
-    top: 15%;
+    top: 11%;
     @position: calc(50% - 74px);
     right: @position;
   }

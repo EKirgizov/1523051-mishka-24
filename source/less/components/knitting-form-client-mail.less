@@ -3,13 +3,14 @@
   flex-direction: column;
   position: relative;
   width: 260px;
-  margin-top: 20px;
+  margin-top: 33px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     width: 770px;
     justify-content: center;
+    margin-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,10 +41,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 100px;
+    margin-left: 63px;
     align-self: center;
     padding: 0;
-    margin-right: 68px;
+    margin-right: 53px;
   }
 }
 
@@ -82,7 +83,16 @@
   fill: #000000;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 5px;
+
+  @media (min-width: @tablet-width) {
+    right: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 18px;
+    right: 6px;
+  }
 }
 
 .knitting-form-client-mail__input {
@@ -93,6 +103,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
+  font-family: "opensans", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -101,6 +112,8 @@
 
   @media (min-width: @tablet-width) {
     width: 501px;
+    font-size: 19px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {

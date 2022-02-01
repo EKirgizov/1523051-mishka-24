@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
   padding: 10px 0 10px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 61px;
+  }
 }
 
 .type-product__control-label {
@@ -11,6 +15,10 @@
   font-weight: 700;
   color: #000000;
   margin-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .type-product__control-input[type="radio"] + .type-product__control-mark {
@@ -29,6 +37,26 @@
   &:active {
     background-image: url("../../img/radio-down.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-image: url("../../img/radio.svg");
+    background-size: 52px 52px;
+    left: 0;
+
+    &:hover,
+    &:focus {
+      background-image: url("../../img/radio-hover.svg");
+      background-size: 52px 52px;
+    }
+
+    &:active {
+      background-image: url("../../img/radio-down.svg");
+      background-size: 52px 52px;
+    }
+  }
 }
 
 .type-product__control-input[type="radio"]:checked + .type-product__control-mark {
@@ -42,13 +70,31 @@
   background-image: url("../../img/radio-active.svg");
   background-size: 42px 42px;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    background-size: 52px 52px;
+  }
 }
 
 .type-product__control-input[type="radio"]:checked + .type-product__control-mark:hover::before,
 .type-product__control-input[type="radio"]:checked + .type-product__control-mark:focus::before {
   background-image: url("../../img/radio-active-hover.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    background-size: 52px 52px;
+  }
 }
 
 .type-product__control-input[type="radio"]:checked + .type-product__control-mark:active::before {
   background-image: url("../../img/radio-active-down.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 52px;
+    background-size: 52px 52px;
+  }
 }

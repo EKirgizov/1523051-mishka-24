@@ -16,6 +16,10 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, auto);
+    column-gap: 10px;
+    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 }
 
@@ -24,7 +28,7 @@
   width: 260px;
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     width: 292px;
@@ -55,13 +59,13 @@
   @media (min-width: @tablet-width) {
     grid-row: 2/3;
     grid-column: 1/2;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 2/3;
     grid-column: 2/4;
-    margin-bottom: 97px;
+    margin-bottom: 111px;
   }
 }
 
@@ -71,7 +75,7 @@
   @media (min-width: @tablet-width) {
     grid-row: 1/5;
     grid-column: 2/3;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 
@@ -84,42 +88,43 @@
 }
 
 .product-week-about__price {
-  width: 260px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     grid-row: 3/4;
     grid-column: 1/2;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row: 3/4;
     grid-column: 2/4;
     margin-bottom: 33px;
+    text-align: left;
+    margin-left: 70px;
   }
 }
 
 .product-week-about__to-cart {
-  padding: 16px 70px 16px 70px;
+  padding: 13px 70px 13px 70px;
 
   @media (min-width: @tablet-width) {
-    padding: 16px 86px 16px 86px;
+    padding: 13px 86px 13px 86px;
     grid-row: 4/5;
     grid-column: 1/2;
-    margin-bottom: 52px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 16px 86px 16px 86px;
+    padding: 13px 86px 13px 86px;
     grid-row: 4/5;
     grid-column: 2/4;
-    margin-bottom: 73px;
+    margin-bottom: 96px;
     justify-self: left;
     box-sizing: border-box;
     width: 292px;

@@ -7,17 +7,17 @@
 .about-us__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 31px 30px 26px 30px;
+  padding: 33px 30px 23px 30px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
-    padding: 56px 50px 51px 50px;
+    padding: 59px 50px 32px 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    padding: 68px 50px 58px 50px;
+    padding: 68px 50px 41px 50px;
   }
 }
 
@@ -50,8 +50,10 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
+    grid-auto-flow: column;
     width: 668px;
     grid-template-columns: 334px 334px;
+    grid-template-rows: repeat(3, auto);
   }
 
   @media (min-width: @desktop-width) {
@@ -70,11 +72,12 @@
   line-height: 20px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 50px;
   }
 }
 
@@ -84,11 +87,14 @@
   background-image: url("../../img/icon-flower.svg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: left;
+  background-position-x: 10px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 235px;
+    padding-top: 60px;
+    background-position-y: 2px;
+    background-position-x: 6px;
   }
 }
 
@@ -103,6 +109,8 @@
 
   @media (min-width: @tablet-width) {
     width: 265px;
+    padding-top: 60px;
+    background-position-y: 2px;
   }
 }
 
@@ -112,11 +120,13 @@
   background-image: url("../../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: left;
+  background-position-x: 10px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 242px;
+    padding-top: 60px;
+    background-position-y: 10px;
   }
 }
 
@@ -126,11 +136,14 @@
   background-image: url("../../img/icon-clew.svg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: left;
+  background-position-x: 5px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 278px;
+    padding-top: 60px;
+    background-position-y: 3px;
+    background-position-x: 2px;
   }
 }
 
@@ -145,6 +158,8 @@
 
   @media (min-width: @tablet-width) {
     width: 325px;
+    padding-top: 60px;
+    background-position-y: 5px;
   }
 }
 
@@ -154,10 +169,12 @@
   background-image: url("../../img/icon-present.svg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: left;
+  background-position-x: 4px;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 263px;
+    padding-top: 60px;
+    background-position-y: 3px;
   }
 }
