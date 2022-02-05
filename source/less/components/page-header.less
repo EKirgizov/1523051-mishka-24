@@ -1,13 +1,15 @@
 .page-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 79px;
+  min-height: 79px;
   position: relative;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
@@ -27,10 +29,11 @@
 
 .page-header__logo {
   display: block;
-  margin: 0;
+  margin: 22px 0;
   padding: 0;
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     position: absolute;
     top: 13%;
     @position: calc(50% - 74px);

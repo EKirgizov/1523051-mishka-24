@@ -6,6 +6,10 @@
   <title>Магазин изделий ручной работы «Мишка»</title>
   <link rel="stylesheet" href=".//css/style.min.css">
   <link rel="icon" href=".//favicon.ico">
+  <link rel="preload" href=".//fonts/opensans.woff" as="font">
+  <link rel="preload" href=".//fonts/opensans.woff2" as="font">
+  <link rel="preload" href=".//fonts/opensansbold.woff" as="font">
+  <link rel="preload" href=".//fonts/opensansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -166,7 +170,7 @@
         <span class="product-week-about__price">
           Цена: 990 руб.
         </span>
-        <a class="product-week-about__to-cart button">
+        <a class="product-week-about__to-cart button" href="#">
           Заказать
         </a>
       </div>
@@ -298,7 +302,7 @@
           <use href="img/sprite.svg#logotype-footer"></use>
         </svg>
       </a>
-      <div class="social page-footer--social">
+      <div class="social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
@@ -326,7 +330,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright">
+      <div class="copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <svg class="copyright__link-icon" width="27" height="34">

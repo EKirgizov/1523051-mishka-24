@@ -49,18 +49,14 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-wrap: wrap;
     width: 668px;
-    grid-template-columns: 334px 334px;
-    grid-template-rows: repeat(3, auto);
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
+    align-self: center;
     width: 700px;
-    grid-template-columns: 350px 350px;
-    margin: 0 auto;
   }
 }
 
@@ -78,6 +74,11 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 50px;
+    width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
   }
 }
 

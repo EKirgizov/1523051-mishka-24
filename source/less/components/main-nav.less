@@ -41,7 +41,7 @@
   background-position: center;
   position: absolute;
   top: 22px;
-  right: 37px;
+  right: 26px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -59,10 +59,29 @@
     z-index: 2;
     background-color: #ffffff;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: #ffffff;
+  }
 }
 
-.main-nav__toggle.main-nav__toggle:active {
+.main-nav__toggle:active {
   background-image: url("../../img/menu-close.svg");
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__wrapper {

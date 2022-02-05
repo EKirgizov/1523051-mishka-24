@@ -7,7 +7,7 @@
   font-family: "opensans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/opensans.woff2") format("woff2");
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
   font-display: swap;
 }
 
@@ -15,7 +15,7 @@
   font-family: "opensans";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/opensansbold.woff2") format("woff2");
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
   font-display: swap;
 }
 
@@ -29,10 +29,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "opensans", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 15px;
   background-color: #ffffff;
   color: #444444;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
