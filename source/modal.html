@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="page-catalog" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин изделий ручной работы «Мишка»</title>
+  <link rel="stylesheet" href=".//css/style.min.css">
+  <link rel="icon" href=".//favicon.ico">
+  <link rel="preload" href=".//fonts/opensans.woff" as="font">
+  <link rel="preload" href=".//fonts/opensans.woff2" as="font">
+  <link rel="preload" href=".//fonts/opensansbold.woff" as="font">
+  <link rel="preload" href=".//fonts/opensansbold.woff2" as="font">
+</head>
+<body>
+  <div class="modal-container">
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__slogan">Выберите размер:</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="size-list">
+          <li class="size-list__item">
+            <label class="size">
+              <input class="visually-hidden size__control-input" type="checkbox" name="s" checked>
+              <span class="size__control-mark"></span>
+              <span class="size__control-label">S</span>
+            </label>
+          </li>
+          <li class="size-list__item">
+            <label class="size">
+              <input class="visually-hidden size__control-input" type="checkbox" name="m" checked>
+              <span class="size__control-mark"></span>
+              <span class="size__control-label">M</span>
+            </label>
+          </li>
+          <li class="size-list__item">
+            <label class="size">
+              <input class="visually-hidden size__control-input" type="checkbox" name="l" checked>
+              <span class="size__control-mark"></span>
+              <span class="size__control-label">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal__button" type="submit">
+          Добавить
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

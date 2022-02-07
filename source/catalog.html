@@ -122,7 +122,7 @@
             <span class="catalog-list__item-text">Рост 30 см, вес 200 г</span>
             <div class="catalog-list__item-price-wrapper">
               <span class="catalog-list__price">1&nbsp;200 руб.</span>
-              <a href="#">
+              <a href="modal.html" class="modal__link">
                 <svg class="catalog-list__cart-icon" width="21" height="18">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
@@ -148,7 +148,7 @@
             <span class="catalog-list__item-text">Диаметр 15 см, высота 10 см</span>
             <div class="catalog-list__item-price-wrapper">
               <span class="catalog-list__price">690 руб.</span>
-              <a href="#">
+              <a href="modal.html" class="modal__link">
                 <svg class="catalog-list__cart-icon" width="21" height="18">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
@@ -174,7 +174,7 @@
             <span class="catalog-list__item-text">Диаметр 30 см, высота 30 см</span>
             <div class="catalog-list__item-price-wrapper">
               <span class="catalog-list__price">1&nbsp;500 руб.</span>
-              <a href="#">
+              <a href="modal.html" class="modal__link">
                 <svg class="catalog-list__cart-icon" width="21" height="18">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
@@ -289,7 +289,12 @@
 
     let cart = document.querySelectorAll('.catalog-list__cart-icon');
     let mod = document.querySelector('.modal-container');
+    let link = document.querySelectorAll('.modal__link');
     let i = 0;
+
+    for(let i = 0; i < link.length; i++) {
+          link[i].setAttribute("href", "javascript:");
+        }
 
     for(let i = 0; i < cart.length; i++) {
       cart[i].onclick = function() {
